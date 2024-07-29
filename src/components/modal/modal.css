@@ -1,0 +1,35 @@
+.modal-container{
+    background-color: rgba(0, 0, 0, 0.637);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    place-items: center;
+}
+.modal{
+    background-color: white;
+    border-radius: 30px;
+    height: 70%;
+    width: 40%;
+    margin: 0 auto;
+}
+.modal-header{
+    display: flex;
+    justify-content: end;
+    padding: 2rem;
+}
+.modal-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 60%;
+    margin: auto;
+}
+.modal-form input{
+    height: 3rem;
+    padding-left: 1rem;
+}
+.modal-form textarea{
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+}

@@ -1,0 +1,19 @@
+.main-container{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.main-header-heading{
+    font-size: 2rem;
+}
+.main-buttons{
+    display: flex;
+    gap: 2%;
+}
+.main-todos-container{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}

@@ -1,0 +1,14 @@
+.todos-task-data {
+    display: flex;
+    gap: 2rem;
+    flex: 1 1 30%;
+}
+.todos-card{
+    display: flex;
+    place-items: center;
+    gap: 2rem;
+}
+.todos-buttons{
+    display: flex;
+    gap: 2rem;
+}
