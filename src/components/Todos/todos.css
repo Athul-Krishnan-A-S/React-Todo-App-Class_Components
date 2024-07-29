@@ -1,7 +1,7 @@
 .todos-task-data {
     display: flex;
     gap: 2rem;
-    flex: 1 1 30%;
+    flex: 0 0 80%;
 }
 .todos-card{
     display: flex;
@@ -11,4 +11,12 @@
 .todos-buttons{
     display: flex;
     gap: 2rem;
+}
+.todos-description{
+    text-align: justify;
+}
+textarea{
+    background-color: transparent;
+    border: none;
+    outline: none;
 }

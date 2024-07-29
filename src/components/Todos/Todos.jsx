@@ -67,7 +67,13 @@ class Todos extends React.Component {
                         <div className='todos-task-data' >
                             <div>{task}</div>
                             <div>{date}</div>
-                            <div>{description}</div>
+                            <textarea
+                                disabled
+                                cols={60}
+                                rows={10}
+                                className='todos-description'>
+                                {description}
+                            </textarea>
                         </div>
                     )}
                 </div>
