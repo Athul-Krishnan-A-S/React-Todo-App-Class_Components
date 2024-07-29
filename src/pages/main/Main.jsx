@@ -14,6 +14,21 @@ class Main extends React.Component {
         };
     }
 
+    componentDidMount() {
+        document.addEventListener('keydown', this.handleKeyDown);
+    }
+
+    handleKeyDown = (event) => {
+        if (event.ctrlKey && (event.key === 'b' || event.key === 'B')) {
+            event.preventDefault();
+            this.openModal();
+        }
+        if (event.key === 'Escape') {
+            event.preventDefault();
+            this.closeModal();
+        }
+    }
+
     componentDidUpdate(prevProps, prevState) {
         if (prevState.todos !== this.state.todos) {
             console.log('Todo updated');

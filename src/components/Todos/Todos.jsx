@@ -14,6 +14,15 @@ class Todos extends React.Component {
         };
     }
 
+    componentDidUpdate(prevProps, prevState) {
+        if (prevState.task !== this.state.task || prevState.date !== this.state.date || prevState.description !== this.state.description) {
+            const { index, updateTask } = this.props;
+            const { task, date, description } = this.state;
+            console.log('updating');
+            updateTask(index, { task, date, description });
+        }
+    }
+
     toggleCompleteStatus = () => {
         this.props.toggleTaskCompletion(this.props.index);
     }
@@ -31,14 +40,6 @@ class Todos extends React.Component {
     handleEditToggle = () => {
         this.setState((prevState) => ({ isEditing: !prevState.isEditing }));
     }
-
-    handleSave = () => {
-        const { index, updateTask } = this.props;
-        const { task, date, description } = this.state;
-        updateTask(index, { task, date, description });
-        this.handleEditToggle();
-    }
-
     render() {
         const { task, date, description, isEditing } = this.state;
         return (
@@ -91,7 +92,7 @@ class Todos extends React.Component {
                         <>
                             <Button
                                 value='Save'
-                                onClick={this.handleSave}
+                                onClick={this.handleEditToggle}
                                 className='button saveButton'
                             />
                             <Button
