@@ -4,6 +4,7 @@
     padding: 1rem;
     border-radius: 30px;
     color: white;
+    width: 10rem;
 }
 
 .add-new-btn {
@@ -46,7 +47,6 @@
 .completeBtn,.saveButton {
     background-color: rgb(52, 212, 52) !important;
 }
-
 .markCompleteBtn {
     color: rgba(124, 122, 122, 0.795) !important;
 }

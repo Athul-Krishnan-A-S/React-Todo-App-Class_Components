@@ -58,6 +58,7 @@ class Modal extends React.Component {
                             value={description}
                             onChange={this.handleChange}
                             name="description"
+                            className="description"
                         />
                         <Button type="submit" value="Add New Task" className="button add-new-btn" />
                     </form>

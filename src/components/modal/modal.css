@@ -33,3 +33,6 @@
     padding-left: 1rem;
     padding-top: 0.5rem;
 }
+.description{
+    border: 2px solid rgba(128, 128, 128, 0.418);
+}

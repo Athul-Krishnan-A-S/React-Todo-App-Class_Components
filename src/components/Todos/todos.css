@@ -1,7 +1,7 @@
 .todos-task-data {
     display: flex;
     gap: 2rem;
-    flex: 0 0 80%;
+    flex: 0 0 70%;
 }
 .todos-card{
     display: flex;

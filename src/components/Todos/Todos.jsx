@@ -1,3 +1,4 @@
+
 import React from 'react';
 import './todos.css';
 import Button from '../button/Button';
@@ -61,6 +62,9 @@ class Todos extends React.Component {
                                 name='description'
                                 value={description}
                                 onChange={this.handleInputChange}
+                                cols={60}
+                                rows={10}
+                                className='description'
                             />
                         </div>
                     ) : (
